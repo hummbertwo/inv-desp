@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp WhatsApp</title>
 
-  <!-- Título que se ve en la pestaña -->
-  <title>Despedida Daniela</title>
-
-  <!-- Open Graph para WhatsApp, Facebook -->
+    <!-- Open Graph para WhatsApp, Facebook -->
   <meta property="og:title" content="🌸 Mi Despedida 🌸" />
   <meta property="og:description" content="Haz clic en el botón y conéctate directo por WhatsApp conmigo." />
   <meta property="og:image" content="https://invdanieladesp.vercel.app/img/preview.jpg" />
@@ -20,14 +18,21 @@
   <meta name="twitter:description" content="Haz clic y abre WhatsApp directamente." />
   <meta name="twitter:image" content="https://invdanieladesp.vercel.app/img/preview.jpg" />
 
-  <link rel="stylesheet" href="/css/styles.css" />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <img src="img/mi-imagen.jpg" alt="Imagen principal" class="main-img">
-    <a href="https://wa.me/521XXXXXXXXXX" target="_blank" class="btn-whatsapp">Abrir WhatsApp</a>
-  </div>
 
-  <script src="/js/script.js"></script>
+    <div class="image-container">
+        <img src="./img/inv1.jpg" alt="Imagen principal" class="main-img">
+    </div>
+
+    <button id="whatsappBtn" class="btn-whatsapp">
+        Confirma tu Asistencia
+    </button>
+
+    <!-- Script -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
+
