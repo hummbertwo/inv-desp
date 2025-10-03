@@ -15,10 +15,9 @@ body {
     background-color: #f7f7f7;
     padding: 20px;
     text-align: center;
-    overflow: hidden; /* evita scroll por las flores */
+    overflow: hidden;
 }
 
-/* Contenedor de imagen */
 .image-container {
     position: relative;
     display: inline-block;
@@ -33,35 +32,31 @@ img {
     display: block;
 }
 
-/* Flores */
 .flower {
-    position: fixed; /* flota sobre toda la pantalla */
-    width: 80px; /* tamaño base, se puede cambiar con JS */
-    height: 80px;
-    background-image: url('../img/flower.png'); /* tu imagen de flor */
+    position: fixed;
     background-size: cover;
     pointer-events: none;
     animation-name: fall;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    z-index: 2; /* delante de imagen y botón */
+    z-index: 2; /* por delante de la imagen */
 }
 
-/* Animación caída con fade in y fade out */
+/* Animación de caída con fade in/out */
 @keyframes fall {
     0% {
         transform: translateY(-50px) rotate(0deg);
-        opacity: 0; /* invisible al inicio */
+        opacity: 0;
     }
     10% {
-        opacity: 1; /* fade in */
+        opacity: 1;
     }
     90% {
-        opacity: 1; /* visible mientras cae */
+        opacity: 1;
     }
     100% {
         transform: translateY(110vh) rotate(360deg);
-        opacity: 0; /* fade out */
+        opacity: 0;
     }
 }
 
@@ -76,7 +71,7 @@ button {
     transition: background-color 0.3s;
     margin-top: 20px;
     position: relative;
-    z-index: 1; /* debajo de las flores */
+    z-index: 1;
 }
 
 button:hover {

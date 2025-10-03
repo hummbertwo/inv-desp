@@ -8,32 +8,53 @@ whatsappBtn.addEventListener('click', () => {
     window.open(url, '_blank');
 });
 
-// Flores cayendo frente a la imagen
+// 🌸 Configuración de flores
+const flowerImages = [
+    "img/flower1.png",
+    "img/flower2.png",
+    "img/flower3.png"
+];
+
+let intervalId;
+
+// Crear una flor
 function createFlower() {
     const flower = document.createElement('div');
     flower.classList.add('flower');
 
+    // Imagen aleatoria de flores
+    const randomFlower = flowerImages[Math.floor(Math.random() * flowerImages.length)];
+    flower.style.backgroundImage = `url('${randomFlower}')`;
+
     // Posición horizontal aleatoria
     const offsetX = Math.random() * window.innerWidth;
     flower.style.left = `${offsetX}px`;
-    flower.style.top = `-30px`; // empieza arriba
+    flower.style.top = `-30px`;
 
-    // Tamaño aleatorio para variedad
-    const size = 60 + Math.random() * 20; // entre 20px y 40px
+    // Tamaño aleatorio
+    const size = 60 + Math.random() * 30; // entre 20px y 50px
     flower.style.width = `${size}px`;
     flower.style.height = `${size}px`;
 
-    // Velocidad de caída aleatoria (más despacio)
+    // Duración de caída aleatoria
     const duration = 6 + Math.random() * 4; // entre 6s y 10s
     flower.style.animationDuration = `${duration}s`;
 
     document.body.appendChild(flower);
 
-    // Eliminar después de la animación
+    // Eliminar al terminar
     setTimeout(() => {
         flower.remove();
-    }, duration * 1000);
+    }, duration * 1500);
 }
 
-// Generar flores cada 0.7s
-setInterval(createFlower, 700);
+// 🌸 Iniciar lluvia de flores SOLO por 10 segundos
+function startFlowers() {
+    intervalId = setInterval(createFlower, 500); // cada 0.5s aparece una
+    setTimeout(() => {
+        clearInterval(intervalId); // detener después de 10s
+    }, 10000);
+}
+
+// Iniciar al cargar la página
+window.onload = startFlowers;
