@@ -1,7 +1,7 @@
 // WhatsApp
 const whatsappBtn = document.getElementById('whatsappBtn');
 const phoneNumber = "528181191077"; // Cambia al número deseado con código país
-const message = encodeURIComponent("¡Hola! Te contacto desde la web.");
+const message = encodeURIComponent("¡Hola Daniela! Te confirmo mi Asistencia.");
 
 whatsappBtn.addEventListener('click', () => {
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
