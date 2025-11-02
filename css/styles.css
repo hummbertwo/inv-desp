@@ -81,7 +81,7 @@ button:hover {
 .countdown-title {
     font-size: 1rem;
     margin-top: 1.5rem;
-    color: #b60a6e;
+    color: #f1249c;
 }
 
 .countdown {
@@ -89,7 +89,7 @@ button:hover {
     justify-content: center;
     gap: 1.5rem;
     margin-top: 1rem;
-    color: #964091;
+    color: #f361b6;
     animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -109,7 +109,7 @@ button:hover {
 .time-box p {
     font-size: 1rem;
     margin-top: 0.3rem;
-    color: #d67cda;
+    color: #f042ad;
 }
 
 @keyframes fadeIn {
@@ -123,7 +123,7 @@ button:hover {
 }
 
 .btn-ubicacion {
-    background-color: #d39ad1;
+    background-color: #f042ad;
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
