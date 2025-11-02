@@ -81,7 +81,7 @@ button:hover {
 .countdown-title {
     font-size: 1rem;
     margin-top: 1.5rem;
-    color: #7a4a91;
+    color: #b60a6e;
 }
 
 .countdown {
@@ -89,7 +89,7 @@ button:hover {
     justify-content: center;
     gap: 1.5rem;
     margin-top: 1rem;
-    color: #4a2c5e;
+    color: #964091;
     animation: fadeIn 1.5s ease-in-out;
 }
 
