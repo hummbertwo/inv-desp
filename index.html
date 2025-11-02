@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebApp WhatsApp</title>
+    <title>Mi Despedida Daniela</title>
 
     <!-- Open Graph para WhatsApp, Facebook -->
-  <meta property="og:title" content="🌸 Mi Despedida de Soltera 🌸" />
-  <meta property="og:description" content="Información del Evento." />
-  <meta property="og:image" content="https://invitacion16nov.vercel.app/img/preview.jpg" />
-  <meta property="og:url" content="https://invitacion16nov.vercel.app" />
-  <meta property="og:type" content="website" />
+    <meta property="og:title" content="🌸 Mi Despedida de Soltera 🌸" />
+    <meta property="og:description" content="Información del Evento." />
+    <meta property="og:image" content="https://invitacion16nov.vercel.app/img/preview.jpg" />
+    <meta property="og:url" content="https://invitacion16nov.vercel.app" />
+    <meta property="og:type" content="website" />
 
-  <!-- Para Twitter (también lo usa WhatsApp a veces) -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="🌸 Mi Despedida de Soltera 🌸" />
-  <meta name="twitter:description" content="Información del Evento." />
-  <meta name="twitter:image" content="https://invitacion16nov.vercel.app/img/preview.jpg" />
+    <!-- Para Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="🌸 Mi Despedida de Soltera 🌸" />
+    <meta name="twitter:description" content="Información del Evento." />
+    <meta name="twitter:image" content="https://invitacion16nov.vercel.app/img/preview.jpg" />
 
     <!-- Estilos -->
     <link rel="stylesheet" href="./css/styles.css">
@@ -26,10 +26,37 @@
     <div class="image-container">
         <img src="./img/inv1.jpg" alt="Imagen principal" class="main-img">
     </div>
+  <h2 class="countdown-title"> Lista de Asistencia Cerrada </h2>
+  <h2 class="countdown-title">✨ ¡Falta poco para celebrar juntas! ✨</h2>
+<div class="countdown" id="countdown">
+    <div class="time-box">
+        <span id="days">00</span>
+        <p>Días</p>
+    </div>
+    <div class="time-box">
+        <span id="hours">00</span>
+        <p>Horas</p>
+    </div>
+    <div class="time-box">
+        <span id="minutes">00</span>
+        <p>Minutos</p>
+    </div>
+</div>
 
-    <button id="whatsappBtn" class="btn-whatsapp">
-        Confirma tu Asistencia AQUI
-    </button>
+<section class="ubicacion">
+    <button class="btn-ubicacion" onclick="mostrarMapa()">Ver ubicación</button>
+
+    <div id="mapa" class="mapa-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.1807287253364!2d-100.29373771244204!3d25.764593396062207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662951431b2525d%3A0x88b3aa2970b18edb!2sCROWN%20EVENTOS%20Plaza%20Andenes!5e0!3m2!1ses!2smx!4v1762049820635!5m2!1ses!2smx" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
 
     <!-- Script -->
     <script src="./js/script.js"></script>
