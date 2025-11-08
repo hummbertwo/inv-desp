@@ -54,7 +54,7 @@ function startFlowers() {
 
 // ⏳ Countdown
 function startCountdown() {
-    const eventDate = new Date("2025-11-16T18:00:00").getTime();
+    const eventDate = new Date("2025-11-16T14:00:00").getTime();
 
     const countdown = setInterval(() => {
         const now = new Date().getTime();
